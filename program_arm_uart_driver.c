@@ -69,14 +69,14 @@ void void_send_byte_uart(u8 VALUE)
 void void_send_string_uart(u8 VALUE[])
 {
     u8 i = 0;
-    while (VALUE[i] == '\0')
+    while (VALUE[i] != '\0')
     {
         void_send_byte_uart(VALUE[i]);
         i++;
     }
 }
 
-u8 void_read_byte_uart()
+u8 u8_read_byte_uart()
 {
 
     u32 LOC_TimeOut = 0;
