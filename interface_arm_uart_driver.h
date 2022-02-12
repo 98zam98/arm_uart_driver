@@ -15,7 +15,7 @@
 void void_init_uart();
 void void_send_byte_uart(u8 VALUE);
 void void_send_string_uart(u8 VALUE[]);
-u8 void_read_byte_uart();
+u8 u8_read_byte_uart();
 //--------------------------------------	
 
 
@@ -32,6 +32,9 @@ enum us_STOP_STOP_bits_USART_CR2
 
 
 /* macro function*/
+
+#define MACRO_send_NEW_LINE_uart() void_send_string_uart("\r\n")
+
 #define MACRO_CLEAR_USART_SR() USART_SR_REG = 0
 
 #define MACRO_GET_CTS_USART_SR() GETBIT(USART_SR_REG,CTS_USART_SR)
