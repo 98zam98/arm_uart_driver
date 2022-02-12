@@ -18,6 +18,4 @@
 
 #define CONFIG_USER_INTERRUPT_ENABLE_USART 1
 //--------------------------------------	
-
-
 #endif /* __CONFIG_ARM_UART_DRIVER_H__ */
