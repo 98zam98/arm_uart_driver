@@ -662,5 +662,4 @@ This bit is not available for UART4 & UART5
 
 //--------------------------------------	
 
-
 #endif /* __HARDWARE_ARM_UART_DRIVER_H__ */
